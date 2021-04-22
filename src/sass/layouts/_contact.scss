@@ -1,0 +1,54 @@
+@use '../abstracts/' as *;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .name,
+  .email,
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  textarea,
+  input {
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+  }
+
+  /* This is our style for the invalid fields */
+  input.invalid {
+    border-color: $orange-soda;
+    background-color: rgba($orange-soda, 0.8);
+  }
+
+  input:focus.invalid {
+    outline: none;
+  }
+
+  /* This is the style of our error messages */
+  .error {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.15rem;
+    font-size: 80%;
+    color: $ghost-white;
+    background-color: $orange-soda;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+  }
+
+  .error.active {
+    padding: 0.3em;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Rafael Calvo | UI/UX Designer and Frontend Developer",
+  "url": "process.env.URL || 'http://localhost:8080'",
+  "authorName": "Rafael Calvo",
+  "authorUrl": "",
+  "description": "UI/UX Designer and Frontend Developer focused on functional, good looking and accessible websites.",
+  "favicon": "/assets/img/favicon.ico",
+  "twitterUsername": "@rafacalvodev"
+}

@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.footer {
+  margin-top: 2rem;
+  border-top: 3px dashed $sonic-silver;
+  border-bottom: 4px solid $neon-blue;
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+
+  @include mq(medium) {
+    border-bottom: 8px solid $neon-blue;
+  }
+
+  &-social {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include mq(small) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &-copy {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}

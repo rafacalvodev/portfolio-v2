@@ -1,0 +1,56 @@
+@use '../abstracts' as *;
+
+.go-home {
+  margin-top: 2rem;
+  a {
+    width: 100%;
+    color: inherit;
+    border-bottom: 2px dashed $neon-blue;
+  }
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  h2 {
+    @include mq(small) {
+      text-shadow: 4px 4px 0 rgba($neon-blue, 0.4);
+    }
+  }
+
+  li {
+    list-style: square;
+    margin-left: 1.75rem;
+  }
+
+  a {
+    color: $neon-blue;
+  }
+
+  code {
+    background-color: #babaff;
+    color: $oxford-blue;
+    padding: 0.15em;
+  }
+
+  figure {
+    margin-top: 1rem;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.post-header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5em;
+  border-bottom: 3px dotted $manatee;
+
+  p {
+    font-family: var(--ff-main);
+  }
+}

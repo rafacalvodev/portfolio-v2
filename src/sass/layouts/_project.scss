@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+@use '../utilities' as *;
+@use '../base' as *;
+
+.projects {
+  font-family: var(--ff-main);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+
+  &-picture {
+    margin-bottom: 2rem;
+  }
+
+  &-info {
+    background-color: $manatee;
+    color: $oxford-blue;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    flex-direction: column;
+
+    @include mq(small) {
+      width: 80%;
+      margin-bottom: 3rem;
+      flex-direction: row;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p:first-child {
+      font-weight: 600;
+    }
+
+    a {
+      color: $neon-blue;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.testimonials {
+  margin-top: 7rem;
+  margin-bottom: 2.5rem;
+
+  @include mq(small) {
+    margin-top: 5rem;
+  }
+
+  &-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include mq(small) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  blockquote {
+    padding: 0.5em;
+  }
+
+  p {
+    font-family: var(--ff-article);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+}

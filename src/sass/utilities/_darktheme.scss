@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.darkmode {
+  --clr-light: #e6e6ff;
+  --clr-dark: #0f0f2b;
+  --clr-primary: #5f5fff;
+  color: var(--clr-light);
+  --background: var(--clr-dark);
+  //transition: ease 0.5s;
+
+  svg {
+    color: var(--clr-light);
+  }
+}

@@ -1,0 +1,21 @@
+<ul class="projects-grid">
+  {%- for item in collections.mainwork -%}
+    <li>
+      <div class="project-card card">
+        <img src="{{item.data.screenshot}}" alt="{{ item.data.title }} screenshot"  loading="lazy">
+        <div class="card-text">
+          <header class="card-header">
+            <h4><a href="{{ item.url | url }}">{{ item.data.title }}</a></h4>
+            <span class="tag">{{ item.data.type }}</span>
+          </header>
+          <p card="card-text">{{ item.data.description }}</p>
+          <a class="more-link" href="{{ item.url | url }}">Read More →</a>
+        </div>
+      </div>
+    </li>
+  {%- endfor -%}
+</ul>
+
+<div class="see-more">
+  <a class="button button-secondary" href="/projects/">More projects</a>
+</div>

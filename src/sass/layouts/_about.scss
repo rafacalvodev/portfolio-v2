@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.about {
+  margin-bottom: 2rem;
+
+  a {
+    color: $neon-blue;
+  }
+}

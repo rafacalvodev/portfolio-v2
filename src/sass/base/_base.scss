@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+@use '../utilities' as *;
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--background);
+  transition: ease 0.5s;
+  // background: url('../../assets/img/hexagons.svg') repeat var(--background);
+  //  padding: 0 3rem;
+  // required to make sure the `absolute` positioning of
+  // the anchor wrapper is indeed `relative` to this element vs. the body
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  color: var(--clr-dark);
+}
+
+.visuallyhidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.posts-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10%;
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    a {
+      border-bottom: 2px dashed $neon-blue;
+    }
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-info {
+    margin-bottom: 1.25rem;
+  }
+
+  .read-more {
+    position: relative;
+    top: -0.75em;
+    color: $neon-blue;
+
+    a:hover {
+      border-bottom: 2px dashed $neon-blue;
+    }
+  }
+}

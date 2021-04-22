@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+@use 'tags' as *;
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include mq(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  a {
+    color: $neon-blue;
+    border-bottom: 2px dashed $neon-blue;
+    &:first-child {
+      color: inherit;
+    }
+  }
+
+  h4 {
+    a {
+      color: inherit;
+    }
+  }
+}

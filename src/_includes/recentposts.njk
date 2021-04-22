@@ -1,0 +1,29 @@
+<ul class="posts-list">
+  {%- for post in collections.recent | reverse -%}
+    <li>
+      <h4><a href="{{ post.url | url }}">{{ post.data.title }}</a></h4>
+      {# {% if post.data.tags %}
+        <div>
+          <ul>
+            <li>
+              {% for tag in post.data.tags %}
+                {%- if tag != "recent" -%}
+                  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                <span class="tag"><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></span>
+                {%- endif -%}
+              {% endfor %}
+
+            </li>
+          </ul>
+        </div>
+      {% endif %} #}
+      <div class="post-info">
+        <p>{{ post.data.description }}</p>
+        <p>{{ page.date | readableDate }}</p>
+      </div>
+    <a class="read-more" href="{{ post.url | url }}">Read More →</a>
+    </li>
+
+  {%- endfor -%}
+</ul>
+<a class="button button-secondary more-link" href="/blog/">More Posts</a>

@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.card {
+  // border-right: 0.15em dashed $neon-blue;
+  // border-bottom: 0.15em dashed $neon-blue;
+  border-radius: $b-radius-l;
+  box-shadow: 4px 4px 0 rgba($neon-blue, 0.5);
+
+  img {
+    width: 100%;
+    border-radius: $b-radius-l $b-radius-l 0 0;
+  }
+
+  h3 {
+    line-height: 1;
+  }
+
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .tag {
+    padding: 0 0.5em;
+  }
+
+  &-text {
+    padding: 0 1em 1.25em 1em;
+    margin-top: 1em;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {# Meta tags go here ↓ #}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ site.authorName }}">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="{{ site.favicon }}" type="image" />
+  {# Fonts go here ↓ #}
+  <link rel="preload" href="{{ '/assets/fonts/WorkSans-VariableFont_wght.ttf' | url }}" as="font" type="font/tff" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/Alegreya-VariableFont_wght.ttf' | url }}" as="font" type="font/tff" crossorigin>
+  {# Social meta tags goe here ↓ #}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ social }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="{{ site.title }}">
+  <meta property="twitter:description" content="{{ site.description }}">
+  <meta property="twitter:image" content="{{ social }}">
+
+  <!-- Stylesheet go here ↓ -->
+  {# Stylesheet go here ↓ #}
+  <link href="/css/style.css" rel="stylesheet">
+  {{ post.data.head }}
+  <title>{{ title }}</title>
+</head>
+<body>
+  {% include 'sitenav.njk' %}
+  <main class="container">
+    {{ content | safe }}
+    {% include 'scrollTop.njk' %}
+  </main>
+  {% include 'sitefooter.njk' %}
+
+  <!-- JavaScript go here ↓ -->
+  {# JavaScript go here ↓ #}
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+@use '../abstracts' as *;
+@use '../utilities' as *;
+
+.nav {
+  border-top: 4px solid $neon-blue;
+  background: inherit;
+  z-index: 3;
+  //transition: box-shadow ease 0.5s;
+
+  &::after {
+    content: '';
+    background: inherit;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @include mq(medium) {
+    border-top: 8px solid $neon-blue;
+  }
+
+  button {
+    cursor: pointer;
+    height: 100%;
+
+    &:focus {
+      outline: max(1px, 0.1em) dashed $neon-blue;
+      outline-offset: 0.45em;
+    }
+  }
+
+  .logo-img {
+    width: 2em;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+
+    svg {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  &-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(medium) {
+      display: none;
+    }
+  }
+
+  &-mobile-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    padding: 0.75em 0;
+
+    a {
+      border-bottom: 3px dotted $neon-blue;
+    }
+
+    @include mq(small) {
+      gap: 35%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+
+      .nav-item {
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 2rem;
+        }
+      }
+
+      .hamburger {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .sidenav {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -150em;
+    overflow-x: hidden;
+    transition: ease 0.5s;
+    min-height: 50.75em;
+    background-color: var(--background);
+
+    @include mq(large) {
+      display: none;
+    }
+
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.75rem 2rem;
+      padding: 1em;
+    }
+
+    .logo-area {
+      display: flex;
+      margin: 0 2rem;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 3.5em;
+      }
+
+      a {
+        gap: 10%;
+      }
+    }
+
+    &-links {
+      padding: 1.75em 0;
+      align-content: space-between;
+
+      .nav-items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+
+        a {
+          border-bottom: 3px dotted $neon-blue;
+        }
+
+        li {
+          margin: 0.25rem 0;
+        }
+      }
+    }
+
+    .social-links {
+      svg {
+        width: 1.5rem;
+      }
+    }
+  }
+
+  &-desktop {
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    display: none;
+
+    @include mq(medium) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      position: relative;
+      bottom: 0.125em;
+    }
+
+    a {
+      color: inherit;
+      text-shadow: none;
+      transition: color ease-in-out 0.5s;
+      //transition: border-bottom ease 0.5s;
+
+      &:hover {
+        color: $neon-blue;
+        text-decoration: underline dashed $neon-blue 2px;
+      }
+    }
+  }
+
+  &-desktop-main {
+    width: 65%;
+
+    .logo {
+      width: 25%;
+    }
+
+    .menu-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: space-between;
+    }
+  }
+}

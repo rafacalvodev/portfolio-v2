@@ -1,0 +1,27 @@
+---
+layout: layouts/page
+templateClass: tmpl-post
+---
+<head>
+  {{ page.head }}
+
+
+</head>
+
+<article class="blog-post">
+
+  <div class="go-home">
+    {# <a href="/">← Go Home</a> #}
+    <a href="/blog/">← Go to Blog</a>
+  </div>
+  <header class="post-header">
+    <img src="{{banner}}" alt="Post banner" loading="lazy">
+    <h2>{{ title }}</h2>
+    <p>
+      Published on: {{ page.date | readableDate }}
+    </p>
+    <p>{{ content | emojiReadTime }} to read</p>
+  </header>
+  {{content | safe}}
+</article>
+

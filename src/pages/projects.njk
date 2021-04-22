@@ -1,0 +1,57 @@
+---
+layout: layouts/page.njk
+permalink: /projects/
+title: My projects
+social: 'https://i.ibb.co/jZW41pw/Projects-Light.png'
+eleventyNavigation:
+  key: Projects
+  order: 1
+---
+
+<section class="projects">
+  <header class="projects-header header">
+    <h2>Here are some works I've done</h2>
+  </header>
+
+  <ul class="projects-grid">
+  {%- for item in collections.work -%}
+    <li>
+      <div class="project-card card">
+        <img src="{{item.data.screenshot2}}" alt="{{ item.data.title }} picture">
+        <div class="card-text">
+          <header class="card-header">
+            <h3><a href="{{ item.url | url }}">{{ item.data.title }}</a></h3>
+            <span class="tag">{{ item.data.type }}</span>
+          </header>
+          <p card="card-text">{{ item.data.description }}</p>
+          <a href="{{ item.url | url }}">Read More →</a>
+        </div>
+      </div>
+    </li>
+  {%- endfor -%}
+  </ul>
+</section>
+
+<section class="testimonials">
+  <h3>Testimonials</h3>
+  <ul class="testimonials-grid">
+    <li class="testimonial">
+      <figure>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>"Rafael is always available and is attentive to any problems that arise to solve them as quickly as possible. He's an important member for our organization."</p>
+        </blockquote>
+        <figcaption>—Henrique Vera, Fundación Arquitectura y Ciudad.</figcaption>
+      </figure>
+    </li>
+    <li class="testimonial">
+      <figure>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>"Rafael is very careful with what he does, his help has helped me gain more followers and clients has also helped me reach more people."</p>
+        </blockquote>
+        <figcaption>—María Fernanda Gonzáles, Mafita Crochet.</figcaption>
+      </figure>
+    </li>
+  </ul>
+</section>
+
+{% include 'contactcard.njk' %}
