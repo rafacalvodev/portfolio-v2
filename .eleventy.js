@@ -11,6 +11,7 @@ const markdownItAnchor = require('markdown-it-anchor');
 const Image = require('@11ty/eleventy-img');
 const pluginCloudinaryImage = require('eleventy-plugin-cloudinary');
 const eleventyGoogleFonts = require('eleventy-google-fonts');
+const sitemap = require('@quasibit/eleventy-plugin-sitemap');
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -126,6 +127,12 @@ module.exports = function (eleventyConfig) {
       replacement: '-',
       remove: /[*+~·,()'"`´%!?¿:@\/]/g,
     });
+  });
+
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: 'https://www.rafacalvo.me/',
+    },
   });
 
   /* Markdown Overrides */

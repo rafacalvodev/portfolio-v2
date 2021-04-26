@@ -22,6 +22,8 @@ Second iteration of my portfolio. Made with [Eleventy](https://www.11ty.dev/), S
 
 - Finish some accesibility issues
 
+- Fix any issue related to the sitemap
+
 ## Feedback
 
 Any feedback is welcome, please reach out to me in my [Twitter](https://twitter.com/rafacalvodev), as there's the place where I'm most active.
