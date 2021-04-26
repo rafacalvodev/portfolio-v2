@@ -16,7 +16,11 @@ Second iteration of my portfolio. Made with [Eleventy](https://www.11ty.dev/), S
 
 - Add more content to the blog
 
+- Finish the About page content
+
 - Fix any issue that presents
+
+- Finish some accesibility issues
 
 ## Feedback
 
