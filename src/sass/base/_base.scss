@@ -27,6 +27,10 @@ svg {
   color: var(--clr-dark);
 }
 
+img {
+  width: 100%;
+}
+
 .visuallyhidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

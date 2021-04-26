@@ -3,9 +3,8 @@ title: 'Mafita Crochet'
 description: 'Website made as gallery to showcase babies clothes made with crochet and mercerized cotton'
 layout: layouts/project
 type: Website
-screenshot: 'https://i.ibb.co/ZN6RkRj/mafita-crochet-desktop.png'
-screenshot2: 'https://i.ibb.co/ZN6RkRj/mafita-crochet-desktop.png'
-projectUrl: https://www.urlhere.com
+screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618249585/portfolio/mafita-crochet-desktop_uczwgv.webp'
+screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618249585/portfolio/mafita-crochet-desktop_uczwgv.webp'
 tags:
   - work
   - mainwork

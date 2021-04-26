@@ -3,8 +3,8 @@ title: 'Fundación Arquitectura y Ciudad'
 description: 'Website/blog made to showcase the historical records of The Architecture in Venezuela through its history.'
 layout: layouts/project
 type: Website
-screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1200/v1618242432/portfolio/FAC-desktop_oxoprf.png'
-screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1200/v1618242432/portfolio/FAC-desktop_oxoprf.png'
+screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,f_auto,q_auto:eco,w_1140/v1618242432/portfolio/FAC-desktop_oxoprf.png'
+screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,f_auto,q_auto:eco,w_1140/v1618242432/portfolio/FAC-desktop_oxoprf.png'
 projectUrl: https://fundaayc.wordpress.com/
 tags:
   - work

@@ -3,8 +3,8 @@ title: 'Pomodoro App'
 description: 'Simple web app based on the Pomodoro Technique'
 layout: layouts/project
 type: App
-screenshot: 'https://i.ibb.co/KxrYrdQ/pomodoro-desktop.png'
-screenshot2: 'https://i.ibb.co/KxrYrdQ/pomodoro-desktop.png'
+screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251119/portfolio/pomodoro-desktop_mdtwhn.webp'
+screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251119/portfolio/pomodoro-desktop_mdtwhn.webp'
 projectUrl: https://www.urlhere.com
 tags:
   - work

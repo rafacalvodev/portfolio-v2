@@ -8,7 +8,7 @@
   <meta name="google-site-verification" content="auf16tQU8g628GQukV7HBVqHUxpVn5EokUDJRs8KDnI" />
   {# Google analytics & tag manager ↓ #}
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0X2B3Y9R0"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0X2B3Y9R0" rel="preload"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -48,13 +48,15 @@
   <!-- Stylesheet go here ↓ -->
   {# Stylesheet go here ↓ #}
   <link href="/css/style.css" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/Alegreya-VariableFont_wght.ttf" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="/assets/fonts/WorkSans-VariableFont_wght.ttf" as="font" crossorigin="anonymous" />
   {{ post.data.head }}
   <title>{{ title }}</title>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VMXRH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+  height="0" width="0" style="display:none;visibility:hidden" rel="preload"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   {% include 'sitenav.njk' %}
   <main class="container">

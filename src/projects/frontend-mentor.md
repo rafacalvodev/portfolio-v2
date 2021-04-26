@@ -3,8 +3,8 @@ title: 'Frontend Mentor Showcase'
 description: 'Website to showcase the challenges made through Frontend Mentor'
 layout: layouts/project
 type: Website
-screenshot: 'https://i.ibb.co/n8ft2v9/frontend-mentor-desktop.png'
-screenshot2: 'https://i.ibb.co/n8ft2v9/frontend-mentor-desktop.png'
+screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251135/portfolio/frontend-mentor-desktop_isivla.webp'
+screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251135/portfolio/frontend-mentor-desktop_isivla.webp'
 projectUrl: https://www.urlhere.com
 tags:
   - work
