@@ -1,4 +1,4 @@
-Sitemap: https://www.yoursitename.dev/sitemap.xml
+Sitemap: https://www.rafacalvo.me/sitemap.xml
 
 User-agent: *
 Disallow:
