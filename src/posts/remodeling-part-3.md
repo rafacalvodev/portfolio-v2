@@ -1,5 +1,5 @@
 ---
-title: 'Remodeling my portfolio - Part 3: Platform'
+title: 'Remodeling my portfolio - Part 3: Stack'
 date: 2021-04-17
 description: This one for me was a bit hard at the beginning. I felt like a kid in a big toy store running through the aisles and being distracted by the shiniest and loudest toys.
 banner: 'https://i.ibb.co/JH7Zdbn/pankaj-patel-u2-Ru4-QBXA5-Q-unsplash.jpg'

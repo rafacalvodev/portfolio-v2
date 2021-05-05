@@ -10,7 +10,7 @@ h3 {
   text-shadow: 3px 3px 0 rgba($neon-blue, 0.4);
 
   @include mq(small) {
-    text-shadow: 5px 5px 0 rgba($neon-blue, 0.4);
+    text-shadow: 4px 4px 0 rgba($neon-blue, 0.4);
   }
 }
 
@@ -27,6 +27,7 @@ h2 {
 
 h3 {
   font-size: var(--step-3);
+  text-shadow: 4px 4px 0 rgba($neon-blue, 0.4);
 }
 
 h4 {

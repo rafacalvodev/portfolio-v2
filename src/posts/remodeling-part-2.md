@@ -1,12 +1,11 @@
 ---
 title: 'Remodeling my portfolio - Part 2: Typography'
-date: 2021-04-16
+date: 2021-04-17
 description: As a designer selecting good typography is always a journey. We lose quite some time looking for the most exciting and fun fonts out there to use in our project.
 banner: 'https://images.unsplash.com/reserve/uZYSV4nuQeyq64azfVIn_15130980706_64134efc6e_o.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80'
 social: 'https://i.ibb.co/PTXgyZV/Remodeling-Part-2.png'
 tags:
   - general
-  - recent
 ---
 
 As a designer selecting good typography is always a journey. We lose quite some time looking for the most exciting and fun fonts out there to use in our project. We have a ton of resources to pick from that some times we feel overwhelmed.

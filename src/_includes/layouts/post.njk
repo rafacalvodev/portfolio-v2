@@ -17,10 +17,12 @@ templateClass: tmpl-post
   <header class="post-header">
     <img src="{{banner}}" alt="Post banner" loading="lazy">
     <h2>{{ title }}</h2>
-    <p>
-      Published on: {{ page.date | readableDate }}
-    </p>
-    <p>{{ content | emojiReadTime }} to read</p>
+    <div class="post-info">
+      <p>
+        Published on: {{ page.date | readableDate }}
+      </p>
+      <p>{{ content | emojiReadTime }} aprox. to read</p>
+    </div>
   </header>
   {{content | safe}}
 </article>

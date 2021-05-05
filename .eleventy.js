@@ -59,11 +59,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPlugin(emojiReadTime, {
-    emoji: '👓',
+    emoji: '📖',
     label: 'mins',
     wpm: 300,
     bucketSize: 3,
   });
+
+  // Syntax highlighter
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);

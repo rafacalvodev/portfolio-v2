@@ -19,7 +19,7 @@
       {% endif %} #}
       <div class="post-info">
         <p>{{ post.data.description }}</p>
-        <p>{{ page.date | readableDate }}</p>
+        <p class="post-date">{{ post.date | readableDate }}</p>
       </div>
       <a class="read-more" href="{{ post.url | url }}">Read More →</a>
     </li>
