@@ -2,9 +2,9 @@
   "title": "Rafael Calvo | UI/UX Designer and Frontend Developer",
   "url": "process.env.URL || 'http://localhost:8080'",
   "authorName": "Rafael Calvo",
-  "authorUrl": "",
+  "authorUrl": "https://www.rafacalvo.me/about/",
   "description": "UI/UX Designer and Frontend Developer focused on functional, good looking and accessible websites.",
-  "keywords": "Web Development, UX, UI, Frontend Development, Frontend, Web Design, Web Designer, UX Design, UI Design, Frontend Web Development",
+  "keywords": "Web Development, UX, UI, Frontend Development, Frontend, Web Design, Web Designer, UX Design, UI Design, Frontend Web Development, CSS, HTML, JavaScript, Dark Mode, Sass",
   "favicon": "/assets/img/favicon.ico",
   "twitterUsername": "@rafacalvodev"
 }
