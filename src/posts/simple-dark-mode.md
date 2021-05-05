@@ -2,6 +2,7 @@
 title: 'Create a Dark Mode toggle with CSS and JavaScript'
 date: 2021-05-05
 description: Let's make a dark mode toggle using CSS and JavaScript. It saves the user preference using localStorage so that the browser remembers it the next time the site is visited.
+keywords: 'CSS, JavaScript, HTML, Dark Mode, Toggle, dark mode toggler, dark mode button, button'
 banner: 'https://i.ibb.co/7QW0y5v/andre-benz-Jn-B8-Gio4-GZo-unsplash.jpg'
 social: 'https://i.ibb.co/PTXgyZV/Remodeling-Part-2.png'
 tags:

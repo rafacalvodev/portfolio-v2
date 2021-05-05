@@ -26,7 +26,7 @@
   <!-- Meta tags -->
   <meta name="author" content="{{ site.authorName }}">
   <meta name="description" content="{{ site.description }}">
-  <meta name="keywords" content="{{ keywords }}">
+  <meta name="keywords" content="{{ page.data.keywords }}">
   <link rel="icon" href="{{ site.favicon }}" type="image" />
   {# Fonts go here ↓ #}
   <link rel="preload" href="{{ '/assets/fonts/WorkSans-VariableFont_wght.ttf' | url }}" as="font" type="font/tff" crossorigin>
@@ -51,7 +51,6 @@
   <link href="/css/style.css" rel="stylesheet">
   <link rel="preload" href="assets/fonts/Alegreya-VariableFont_wght.ttf" as="font" crossorigin="anonymous" />
   <link rel="preload" href="/assets/fonts/WorkSans-VariableFont_wght.ttf" as="font" crossorigin="anonymous" />
-  {# <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"> #}
   {{ post.data.head }}
   <title>{{ title }}</title>
 </head>
