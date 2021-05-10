@@ -42,7 +42,3 @@ What I did was design a gallery-type website that displays the pictures of the s
 \
 \
 Currently I'm looking to ways to make the page SEO friendly and checking if it needs a revamp to help its performance.
-
-In pulvinar, dui quis elementum feugiat, diam nibh ullamcorper eros, efficitur rutrum nunc enim at nulla. Phasellus in finibus massa. Curabitur et efficitur mi, ac scelerisque leo. Duis mollis congue mi ac suscipit. Nam tellus est, commodo at volutpat ut, vestibulum et dolor. Nunc a mauris urna. Donec tristique justo eget ante vehicula tincidunt. Proin leo lectus, dignissim et velit at, convallis fermentum nulla. Mauris enim enim, egestas sit amet pharetra ac, condimentum vel massa. Proin finibus dui nec est feugiat convallis. Suspendisse vestibulum tincidunt enim, in congue erat feugiat et.
-
-Curabitur quis mattis eros. Curabitur porta a enim sed vehicula. Nullam ligula nibh, blandit at tempor in, vestibulum in diam. Duis ornare ex ut laoreet feugiat. Integer feugiat sem in convallis facilisis. Nullam scelerisque sem viverra nibh tempus mattis. Nullam semper nulla eget egestas ultrices. Integer vel nibh facilisis felis pulvinar maximus. In lobortis massa a metus hendrerit vehicula. Ut eget tortor vitae enim lacinia vulputate. Mauris aliquam mollis feugiat. Ut nec porta augue. Duis efficitur quis ante ut efficitur. In sit amet elit ac libero pulvinar egestas id eget erat. Ut tincidunt interdum rutrum.
