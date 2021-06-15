@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .button {
+  font-size: 1.25em;
   display: inline-block;
   padding: 0.5em 1em;
   margin-right: 1rem;
@@ -37,8 +38,13 @@
 }
 
 .button-secondary {
-  background-color: $ghost-white;
-  color: $neon-blue;
+  background-color: $lavender-web;
+  color: $st-patricks-blue;
   // border-right: 2px dashed $neon-blue;
   // border-bottom: 2px dashed $neon-blue;
+
+  &:focus {
+    outline: max(1px, 0.1em) dashed $neon-blue;
+    outline-offset: -0.25em;
+  }
 }
