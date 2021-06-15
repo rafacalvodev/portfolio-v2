@@ -3,6 +3,16 @@
 @use '../base' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;600;700;800;900&display=swap');
 
+.go-back {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  a {
+    width: 100%;
+    color: $neon-blue;
+    border-bottom: 2px dashed $neon-blue;
+  }
+}
+
 .project {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
