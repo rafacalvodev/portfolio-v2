@@ -33,12 +33,12 @@ Mafita Crochet is the name of my mother's babies clothes brand. The clothes is m
 \
 \
 The brand's colors were designed by my [cousin](https://www.instagram.com/yeyegraph/). Initially the clothes and pieces were posted on Instagram, so eventually we decided that the brand needed to broaden a bit. So I proposed to design and build a website.
-\
-\
+<br>
+<br>
 
 #### My Role
 
 What I did was design a gallery-type website that displays the pictures of the sets and pieces. For the layout I was inspired by masonry grid and with some JavaScript I made a quite effective copy. The whole site's made with HTML, CSS/Sass and JavaScript.
-\
-\
+<br>
+<br>
 Currently I'm looking to ways to make the page SEO friendly and checking if it needs a revamp to help its performance.
