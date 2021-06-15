@@ -24,7 +24,18 @@
   .main-hero-cta {
     margin: 2rem 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .button {
+      margin-bottom: 1.5rem;
+    }
+
+    @include mq(small) {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -55,9 +66,9 @@
   padding-top: 2em;
   padding-bottom: 2em;
 
-  h2 {
-    margin-bottom: 1.5rem;
-  }
+  // h2 {
+  //   margin-bottom: 1.5rem;
+  // }
 }
 
 //About Section
@@ -70,7 +81,6 @@
   .about-card {
     display: flex;
     justify-content: space-evenly;
-    //align-items: center;
     align-content: center;
     flex-direction: column;
 
