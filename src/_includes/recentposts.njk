@@ -1,28 +1,30 @@
 <ul class="posts-list">
   {%- for post in collections.recent | reverse -%}
-    <li>
-      <h4><a href="{{ post.url | url }}">{{ post.data.title }}</a></h4>
-      {# {% if post.data.tags %}
-        <div>
-          <ul>
-            <li>
-              {% for tag in post.data.tags %}
-                {%- if tag != "recent" -%}
-                  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-                <span class="tag"><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></span>
-                {%- endif -%}
-              {% endfor %}
+  <li class="post">
+    <h3>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h3>
+    <span class="post-date"
+      ><strong>{{ post.date | readableDate }}</strong></span
+    >
+    <!-- {# {% if post.data.tags %}
+    <div>
+      <ul>
+        <li>
+          {% for tag in post.data.tags %} {%- if tag != "recent" -%} {% set
+          tagUrl %}/tags/{{ tag }}/{% endset %}
+          <span class="tag"
+            ><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></span
+          >
+          {%- endif -%} {% endfor %}
+        </li>
+      </ul>
+    </div>
+    {% endif %} #} -->
+    <p>{{ post.data.description }}</p>
 
-            </li>
-          </ul>
-        </div>
-      {% endif %} #}
-      <div class="post-info">
-        <p>{{ post.data.description }}</p>
-        <p class="post-date">{{ post.date | readableDate }}</p>
-      </div>
     <a class="read-more" href="{{ post.url | url }}">Read More →</a>
-    </li>
+  </li>
 
   {%- endfor -%}
 </ul>
