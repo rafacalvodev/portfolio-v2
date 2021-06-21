@@ -82,6 +82,7 @@
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    align-items: center;
     flex-direction: column;
 
     @include mq(small) {
@@ -110,9 +111,14 @@
 
   .available {
     color: $orange-soda;
+    font-weight: 500;
+    text-decoration: underline dashed;
+    text-decoration-thickness: 0.095em;
+    text-decoration-color: inherit;
+    margin-bottom: 1.465rem;
   }
 
-  &-cta {
+  .about-cta {
     display: flex;
     justify-content: flex-start;
   }
