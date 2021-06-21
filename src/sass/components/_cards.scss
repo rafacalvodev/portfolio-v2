@@ -1,14 +1,16 @@
 @use '../abstracts' as *;
+@use '../base' as *;
 
 .card {
-  // border-right: 0.15em dashed $neon-blue;
-  // border-bottom: 0.15em dashed $neon-blue;
   border-radius: $b-radius-l;
-  box-shadow: 4px 4px 0 rgba($neon-blue, 0.5);
+  // box-shadow: 4px 4px 0 rgba($neon-blue, 0.5);
+  border-width: 0.15em;
+  border-color: $neon-blue;
+  border-style: solid dashed;
+  overflow: hidden;
 
   img {
     width: 100%;
-    border-radius: $b-radius-l $b-radius-l 0 0;
   }
 
   h3 {
