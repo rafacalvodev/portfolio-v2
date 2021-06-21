@@ -111,21 +111,27 @@ h4 {
 
   // Clear top margin
   margin-top: 0;
+
+  a:focus {
+    text-decoration: none;
+    outline: max(1px, 0.1em) dashed $neon-blue;
+    outline-offset: 0.1em;
+  }
 }
 
 h1,
 h2 {
-  text-shadow: 3px 3px 0 rgba($neon-blue, 0.4);
+  text-shadow: 0.05em 0.05em 0 rgba($neon-blue, 0.6);
 
   @include mq(small) {
-    text-shadow: 4px 4px 0 rgba($neon-blue, 0.4);
+    text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.6);
   }
 }
 
 h1 {
   small {
     font-size: 0.5em;
-    text-shadow: 4px 4px 0 rgba($neon-blue, 0.4);
+    text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.6);
   }
 }
 
