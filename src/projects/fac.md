@@ -20,7 +20,7 @@ tags:
 <header class="project-info">
   <div class="project-link">
     <p>Link:</p>
-    <a href="https://fundaayc.wordpress.com/" target="_blank" target="_blank" rel="noopener noreferrer">fundaayc.wordpress.com</a>
+    <a href="https://fundaayc.wordpress.com/" target="_blank" rel="noopener noreferrer">fundaayc.wordpress.com</a>
   </div>
   <div class="project-location">
     <p>Location:</p>
