@@ -8,6 +8,8 @@
   border-radius: $b-radius-sm;
   box-shadow: 0.3em 0.3em 0 rgba($neon-blue, 0.5);
   position: relative;
+  height: 100%;
+  width: 5em;
 
   a:hover {
     color: $ghost-white;
