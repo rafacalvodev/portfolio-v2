@@ -11,6 +11,19 @@
     border-bottom: 8px solid $neon-blue;
   }
 
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.095em;
+    text-decoration-color: $neon-blue;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.095em;
+      text-decoration-color: $neon-blue;
+      color: $neon-blue;
+    }
+  }
+
   &-social {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -23,6 +36,11 @@
 
   &-copy {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .attribution {
     text-align: center;
   }
 }
