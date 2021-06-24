@@ -5,6 +5,7 @@ layout: layouts/project
 type: Website
 screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618249585/portfolio/mafita-crochet-desktop_uczwgv.webp'
 screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618249585/portfolio/mafita-crochet-desktop_uczwgv.webp'
+projectUrl: https://mafitacrochet.netlify.app/
 tags:
   - work
   - mainwork
