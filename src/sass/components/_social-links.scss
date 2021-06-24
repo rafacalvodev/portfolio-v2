@@ -4,10 +4,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
   gap: 5%;
 
-  svg {
-    width: 2rem;
+  a {
+    svg {
+      width: 2rem;
+      transition: color ease-in-out 0.2s;
+    }
+  }
+
+  a:hover {
+    svg {
+      color: $neon-blue;
+    }
   }
 }
