@@ -1,29 +1,28 @@
 ---
-layout: layouts/page
+layout: layouts/base
 templateClass: tmpl-post
 ---
-{# <head>
-  {{ page.head }}
 
-
-</head> #}
+{#
+<head>
+  {{
+    page.head
+  }}
+</head>
+#}
 
 <article class="blog-post">
-
   <div class="go-home">
     {# <a href="/">← Go Home</a> #}
     <a href="/blog/">← Go to Blog</a>
   </div>
   <header class="post-header">
-    <img src="{{banner}}" alt="Post banner" loading="lazy">
+    <img src="{{ banner }}" alt="Post banner" loading="lazy" />
     <h2>{{ title }}</h2>
     <div class="post-info">
-      <p>
-        Published on: {{ page.date | readableDate }}
-      </p>
+      <p>Published on: {{ page.date | readableDate }}</p>
       <p>{{ content | emojiReadTime }} aprox. to read</p>
     </div>
   </header>
-  {{content | safe}}
+  {{ content | safe }}
 </article>
-
