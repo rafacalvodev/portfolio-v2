@@ -9,13 +9,17 @@
   margin-bottom: 2rem;
   padding-bottom: 1.5em;
 
-  @include mq(medium) {
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 1rem;
-  }
+  // @include mq(medium) {
+  //   grid-template-columns: repeat(3, 1fr);
+  //   padding-bottom: 1rem;
+  // }
 }
 
 .project-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
   a {
     color: $neon-blue;
     &:first-child {
@@ -23,13 +27,46 @@
     }
   }
 
-  h4 {
+  img,
+  &-text {
+    @include mq(small) {
+      width: 50%;
+      flex: 1 1 0px;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    @include mq(small) {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
     a {
       color: inherit;
     }
+
+    @include mq(small) {
+      margin-right: auto;
+      max-width: 24ch;
+    }
+  }
+
+  &-text {
+    margin: 1.25em;
   }
 
   .more-link {
     font-weight: 500;
+  }
+
+  @include mq(small) {
+    flex-direction: row;
+    align-items: center;
   }
 }
