@@ -2,18 +2,14 @@
 
 .posts-list {
   padding-top: 1.5em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   p {
     margin-bottom: 0.5rem;
   }
+
   .post {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
     margin-bottom: 1.5rem;
   }
 
@@ -26,9 +22,5 @@
     color: $neon-blue;
     margin-top: 1rem;
     text-decoration: red;
-
-    // &:hover {
-    //   border-bottom: 2px dashed $neon-blue;
-    // }
   }
 }
