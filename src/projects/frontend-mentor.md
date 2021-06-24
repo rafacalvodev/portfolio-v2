@@ -5,7 +5,7 @@ layout: layouts/project
 type: Website
 screenshot: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251135/portfolio/frontend-mentor-desktop_isivla.webp'
 screenshot2: 'https://res.cloudinary.com/dd6wemi8c/image/upload/c_scale,q_auto:eco,w_1140/v1618251135/portfolio/frontend-mentor-desktop_isivla.webp'
-projectUrl: https://www.urlhere.com
+projectUrl: https://frontend-mentor-showcase.netlify.app/
 tags:
   - work
   - mainwork
