@@ -31,7 +31,7 @@ $type-ratios: (
 $type-base-size: 1rem;
 
 // Select by key of map, or use a custom value
-$type-size-ratio: type-ratio('perfectFifth');
+$type-size-ratio: type-ratio('perfectFourth');
 
 // List in descending order to prevent extra sort function
 // Limited to high-touch heading styles
@@ -121,17 +121,22 @@ h4 {
 
 h1,
 h2 {
-  text-shadow: 0.05em 0.05em 0 rgba($neon-blue, 0.6);
+  text-shadow: 0.1em 0.1em 0 rgba($neon-blue, 0.3);
 
   @include mq(small) {
-    text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.6);
+    text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.4);
   }
 }
 
 h1 {
+  max-width: 28ch;
   small {
     font-size: 0.5em;
-    text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.6);
+    text-shadow: 0.1em 0.1em 0 rgba($neon-blue, 0.3);
+
+    @include mq(small) {
+      text-shadow: 0.06em 0.06em 0 rgba($neon-blue, 0.4);
+    }
   }
 }
 
@@ -154,6 +159,11 @@ span {
 }
 
 article {
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-main);
+  }
   font-family: var(--ff-article);
   font-size: 1em;
   max-width: 75ch;
