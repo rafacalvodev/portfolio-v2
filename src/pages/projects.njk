@@ -10,17 +10,22 @@ eleventyNavigation:
 
 <section class="projects">
   <header class="projects-header header">
-    <h2>Here are some works I've done</h2>
+    <h1>Here are some works I've done</h1>
   </header>
 
   <ul class="projects-grid">
-  {%- for item in collections.work -%}
+    {%- for item in collections.work -%}
     <li>
       <div class="project-card card">
-        <img src="{{item.data.screenshot2}}" alt="{{ item.data.title }} picture">
-        <div class="card-text">
+        <img
+          src="{{ item.data.screenshot2 }}"
+          alt="{{ item.data.title }} picture"
+        />
+        <div class="project-card-text">
           <header class="card-header">
-            <h4><a href="{{ item.url | url }}">{{ item.data.title }}</a></h4>
+            <h4>
+              <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+            </h4>
             <span class="tag">{{ item.data.type }}</span>
           </header>
           <p card="card-text">{{ item.data.description }}</p>
@@ -28,48 +33,32 @@ eleventyNavigation:
         </div>
       </div>
     </li>
-  {%- endfor -%}
+    {%- endfor -%}
   </ul>
 </section>
-
-<section class="testimonials">
-  <h3>Testimonials</h3>
-  <ul class="testimonials-grid">
-    <li class="testimonial">
-      <figure>
-        <blockquote cite="https://www.huxley.net/bnw/four.html">
-            <p>"Rafael is always available and is attentive to any problems that arise to solve them as quickly as possible. He's an important member for our organization."</p>
-        </blockquote>
-        <figcaption>—Henrique Vera, Fundación Arquitectura y Ciudad.</figcaption>
-      </figure>
-    </li>
-    <li class="testimonial">
-      <figure>
-        <blockquote cite="https://www.huxley.net/bnw/four.html">
-            <p>"Rafael is very careful with what he does, his help has helped me gain more followers and clients has also helped me reach more people."</p>
-        </blockquote>
-        <figcaption>—María Fernanda Gonzáles, Mafita Crochet.</figcaption>
-      </figure>
-    </li>
-  </ul>
-</section>
-
-{% include 'contactcard.njk' %}
 
 <section class="playground">
   <header class="playground-header header">
     <h2>Welcome to my playground!</h2>
-    <h4>Here you'll find some (if not all) side projects, experiments, templates and designs that I've done and been doing over time.</h4>
+    <h3>
+      Here you'll find some (if not all) side projects, experiments, templates
+      and designs that I've done and been doing over time.
+    </h3>
   </header>
 
   <ul class="projects-grid">
-  {%- for item in collections.playground -%}
+    {%- for item in collections.playground -%}
     <li>
       <div class="project-card card">
-        <img src="{{item.data.screenshot2}}" alt="{{ item.data.title }} picture">
+        <img
+          src="{{ item.data.screenshot2 }}"
+          alt="{{ item.data.title }} picture"
+        />
         <div class="card-text">
           <header class="card-header">
-            <h4><a href="{{ item.url | url }}">{{ item.data.title }}</a></h4>
+            <h4>
+              <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+            </h4>
             <span class="tag">{{ item.data.type }}</span>
           </header>
           <p card="card-text">{{ item.data.description }}</p>
@@ -77,6 +66,6 @@ eleventyNavigation:
         </div>
       </div>
     </li>
-  {%- endfor -%}
+    {%- endfor -%}
   </ul>
 </section>
